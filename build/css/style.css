@@ -356,6 +356,12 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.logo {
+  margin: 0 auto;
+  display: block;
+  width: 120px;
+  text-align: center;
+}
 .section-title {
   margin: 0;
   padding: 0;
@@ -860,4 +866,94 @@ body {
   font-size: 17px;
   padding-bottom: 135px;
   width: 546px;
+  text-align: center;
+}
+.page-footer {
+  background-color: #000000;
+  padding-top: 25px;
+  padding-bottom: 35px;
+}
+.page-footer__wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 750px) {
+  .page-footer__wrapper {
+    width: 600px;
+  }
+}
+@media (min-width: 1536px) {
+  .page-footer__wrapper {
+    width: 1480px;
+  }
+}
+@media (min-width: 2400px) {
+  .page-footer__wrapper {
+    width: 2360px;
+  }
+}
+.we-are {
+  font-family: "Lato", Arial, sans-serif;
+}
+.we-are__description {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 31px;
+  line-height: 41px;
+  margin: 0;
+  font-weight: 300;
+  padding-top: 30px;
+  padding-bottom: 145px;
+}
+.social__title {
+  margin: 0;
+  color: #FFFFFF;
+  text-align: center;
+  padding-bottom: 55px;
+  font-weight: 400;
+  font-size: 39px;
+}
+.social__links {
+  margin: 0 auto;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 425px;
+  padding-bottom: 70px;
+}
+.subscribe__title {
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 31px;
+  font-weight: 300;
+  padding-bottom: 55px;
+  margin: 0;
+}
+.subscribe__form {
+  width: 525px;
+  margin: 0 auto;
+  padding-bottom: 192px;
+}
+.subscribe__email {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #FFFFFF;
+  text-align: center;
+  width: 100%;
+  font-size: 31px;
+  opacity: 0.5;
+}
+.subscribe__copyright {
+  color: #FFFFFF;
+  font-size: 28px;
+  text-align: center;
+  font-weight: 300;
 }
