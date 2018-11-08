@@ -1,9 +1,22 @@
 .login {
-    &__link {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 120px;
+    margin-right: auto;
+  }
+  &__link {
     display: block;
     width: 100%;
     color: #FFFFFF;
     text-decoration: none;
     text-align: center;
+    vertical-align: middle;
+
+    @media (min-width: @tablet-width) {
+      padding-top: 20px;
+      padding-bottom: 25px;
+    }
   }
 }

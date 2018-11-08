@@ -34,4 +34,38 @@
     width: 580px;
     margin: 0 auto;
   }
+
+  @media (min-width: @tablet-width) {
+    &__wrapper {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+    &__links {
+      width: 250px;
+      flex-direction: column-reverse;
+      margin-right: auto;
+      padding-top: 38px;
+      padding-bottom: 0;
+    }
+    &__question {
+      padding-bottom: 33px;
+    }
+    &__texts {
+      margin: 0 auto;
+      padding-top: 120px;
+      padding-bottom: 130px;
+    }
+    &__title {
+      padding-bottom: 25px;
+      font-size: 41px;
+    }
+    &__note {
+      font-size: 47px;
+      padding-bottom: 120px
+    }
+    &__description {
+      font-size: 26px;
+      width: 840px;
+    }
+  }
 }
