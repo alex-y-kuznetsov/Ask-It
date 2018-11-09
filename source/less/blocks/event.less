@@ -1,10 +1,12 @@
 .event {
-  .wrapper();
   display: flex;
   flex-direction: column;
   border-top: 2px solid #FFFFFF;
   border-bottom: 2px solid #FFFFFF;
 
+  &__wrapper {
+    margin: 0 auto;
+  }
   &--interactive {
     background-color: #d76052;
   }
@@ -51,4 +53,8 @@
     font-weight: 400;
     font-size: 27px;
   }
+
+  // @media (min-width: @tablet-width) {
+
+  // }
 }

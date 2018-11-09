@@ -1,4 +1,41 @@
 .events {
-  display: flex;
-  flex-direction: column;
+  background-color: #efeeee;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    display: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    .wrapper();
+    padding-bottom: 350px;
+
+    &__wrapper {
+      flex-direction: row;
+      width: 1480px;
+    }
+    &__item {
+      width: 455px;
+      margin-right: 20px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+      &:nth-child(2) {
+        width: 520px;
+      }
+    }
+    &__title {
+      display: block;
+      margin: 0 auto;
+      font-weight: 300;
+      font-size: 45px;
+      color: #037693;
+      padding-top: 155px;
+      padding-bottom: 160px;
+    }
+  }
 }
