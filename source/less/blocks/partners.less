@@ -4,21 +4,32 @@
 
   &__title {
     font-weight: 300;
-    font-size: 45px;
+    font-size: 48px;
     color: #FFFFFF;
-    padding-top: 35px;
-    padding-bottom: 55px;
+    padding-top: 43px;
+    padding-bottom: 115px;
   }
   &__items {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 270px;
+    width: 370px;
     justify-content: center;
     margin: 0 auto;
     padding-bottom: 65px;
   }
   &__item {
     width: 115px;
+  }
+
+  @media (min-width: @tablet-width) {
+    &__title {
+      font-size: 69px;
+      padding-top: 108px;
+      padding-bottom: 250px;
+    }
+    &__items {
+      width: 760px;
+    }
   }
 }
