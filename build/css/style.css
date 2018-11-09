@@ -603,6 +603,11 @@ body {
   color: #037693;
   font-weight: 400;
 }
+@media (min-width: 1536px) {
+  .how-it-works__title {
+    font-size: 57px;
+  }
+}
 .questions {
   background-color: #037693;
 }
@@ -747,6 +752,9 @@ body {
   width: 515px;
   margin: 0 auto;
   padding-bottom: 95px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .features__item {
   width: 255px;
@@ -762,6 +770,22 @@ body {
   width: 45px;
   font-size: 10px;
   font-weight: 300;
+}
+@media (min-width: 1536px) {
+  .features__items {
+    width: 1435px;
+  }
+  .features__title {
+    font-size: 57px;
+    padding-top: 140px;
+    padding-bottom: 85px;
+  }
+  .features__item {
+    font-size: 62px;
+    padding-bottom: 60px;
+    width: 640px;
+    border-bottom: 2px solid #037693;
+  }
 }
 .partners {
   background-color: #2d2c2c;
