@@ -3,4 +3,24 @@
   background-color: #000000;
   padding-top: 25px;
   padding-bottom: 35px;
+
+  @media (max-width: @tablet-width) {
+    padding-bottom: 60px;
+
+    &__controls {
+      .visually-hidden();
+    }
+  }
+  @media (min-width: @tablet-width) {
+    &__logo {
+      padding-top: 165px;
+      padding-bottom: 90px;
+    }
+    &__controls {
+      padding-bottom: 80px;
+    }
+    &__social {
+      padding-bottom: 120px;
+    }
+  }
 }

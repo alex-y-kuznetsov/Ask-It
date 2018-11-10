@@ -1,6 +1,11 @@
 .about-us {
   .wrapper();
 
+  &__stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
   &__title {
     margin: 0 auto;
     text-align: center;
@@ -9,5 +14,17 @@
     color: #037693;
     padding-top: 35px;
     padding-bottom: 55px;
+  }
+
+  @media (min-width: @tablet-width) {
+    &__title {
+      padding-top: 125px;
+      padding-bottom: 190px;
+      font-size: 45px;
+    }
+    &__stats {
+      width: 1450px;
+      margin: 0 auto;
+    }
   }
 }

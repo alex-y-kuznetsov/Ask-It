@@ -19,6 +19,7 @@
     text-align: center;
     width: 100%;
     font-size: 31px;
+    color: #FFFFFF;
     opacity: 0.5;
   }
   &__copyright {
@@ -26,5 +27,21 @@
     font-size: 28px;
     text-align: center;
     font-weight: 300;
+  }
+
+  @media (min-width: @tablet-width) {
+    &__title {
+      font-size: 61px;
+      padding-bottom: 120px;
+    }
+    &__form {
+      padding-bottom: 375px;
+    }
+    &__email {
+      font-size: 61px;
+    }
+    &__copyright {
+      font-size: 57px;
+    }
   }
 }
