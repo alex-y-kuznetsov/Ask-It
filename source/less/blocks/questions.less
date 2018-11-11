@@ -68,4 +68,38 @@
       width: 840px;
     }
   }
+  @media (min-width: @desktop-width) {
+    &__texts * {
+      text-align: left;
+    }
+    &__title {
+      font-size: 83px;
+      width: 480px;
+      padding-top: 67px;
+      padding-bottom: 29px;
+    }
+    &__note {
+      font-size: 48px;
+      padding-bottom: 75px;
+    }
+    &__description {
+      font-size: 25px;
+      padding-bottom: 63px;
+    }
+    &__links {
+      flex-direction: column;
+    }
+    &__question {
+      position: relative;
+
+      &:first-child {
+        left: -350px;
+        top: 350px;
+      }
+      &:last-child {
+        left: -350px;
+        bottom: 350px;
+      }
+    }
+  }
 }

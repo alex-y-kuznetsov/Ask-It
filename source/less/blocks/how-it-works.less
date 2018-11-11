@@ -11,10 +11,11 @@
   &__items {
     display: flex;
     flex-direction: row;
-    // width: 600px;
+    width: 600px;
     flex-wrap: wrap;
     justify-content: center;
     padding-bottom: 90px;
+    margin: 0 auto;
   }
   &__item {
     width: 245px;
@@ -28,6 +29,28 @@
   @media (min-width: @tablet-width) {
     &__title {
       font-size: 57px;
+    }
+    &__items {
+      width: 1120px;
+      padding-bottom: 30px;
+    }
+    &__item {
+      width: 255px;
+    }
+  }
+  @media (min-width: @desktop-width) {
+    &__title {
+      font-size: 83px;
+      padding-top: 145px;
+      padding-bottom: 135px;
+    }
+    &__items {
+      width: 1750px;
+      padding-bottom: 180px;
+    }
+    &__item {
+      font-size: 36px;
+      width: 400px;
     }
   }
 }
