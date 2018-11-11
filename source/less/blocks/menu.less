@@ -10,18 +10,22 @@
     justify-content: space-between;
     width: 925px;
     padding-left: 437px;
+
+    &__link {
+      display: block;
+      width: 100%;
+      color: #FFFFFF;
+      text-decoration: none;
+      text-align: center;
+    }
   }
+  @media (min-width: @desktop-width) {
+    width: 1500px;
 
-  &__link {
-    display: block;
-    width: 100%;
-    color: #FFFFFF;
-    text-decoration: none;
-    text-align: center;
-
-    @media (min-width: @tablet-width) {
-      padding-top: 20px;
-      padding-bottom: 25px;
+    &__link {
+      font-size: 39px;
+      padding-top: 80px;
+      padding-bottom: 85px;
     }
   }
 }

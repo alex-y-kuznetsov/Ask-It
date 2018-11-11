@@ -59,6 +59,37 @@
   @media (min-width: @tablet-width) {
     &__contents {
       padding-right: 600px;
+      /*Шрифты подгонять, в макете все слито в картинку*/
+    }
+  }
+  @media (min-width: @desktop-width) {
+    &__contents {
+      padding-right: 860px;
+    }
+    &__title {
+      font-size: 83px;
+      padding-top: 370px;
+      padding-bottom: 57px;
+    }
+    &__description {
+      font-size: 50px;
+      padding-bottom: 250px;
+    }
+    &__controls {
+      font-size: 33px;
+      padding-bottom: 360px;
+      width: 700px;
+    }
+    &__create {
+      width: 270px;
+    }
+    &__join {
+      width: 180px;
+    }
+    &__code {
+      font-size: 28px;
+      width: 180px;
+      left: -5px;
     }
   }
 }
