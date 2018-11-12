@@ -19,13 +19,14 @@
     }
     &__item {
       width: 455px;
-      margin-right: 20px;
+      margin-right: 80px;
 
       &:last-child {
         margin-right: 0;
       }
       &:nth-child(2) {
         width: 520px;
+        transform: scale(1.2);
       }
     }
     &__title {
@@ -36,6 +37,27 @@
       color: #037693;
       padding-top: 155px;
       padding-bottom: 160px;
+    }
+  }
+  @media (min-width: @desktop-width) {
+    padding-bottom: 60px;
+    &__wrapper {
+      width: 1800px;
+    }
+    &__item {
+      width: 580px;
+      position: relative;
+
+      &:nth-child(2) {
+        z-index: 2;
+        width: 660px;
+        transform: scale(1.2);
+      }
+    }
+    &__title {
+      font-size: 83px;
+      padding-top: 80px;
+      padding-bottom: 70px;
     }
   }
 }
