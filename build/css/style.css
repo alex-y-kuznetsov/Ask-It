@@ -570,6 +570,11 @@ body {
   left: -3px;
 }
 @media (min-width: 1536px) {
+  .event-manage {
+    background-image: url("../img/event-manage-bg-desktop.jpg");
+    background-position: center -25px;
+    background-size: 100%;
+  }
   .event-manage__contents {
     padding-right: 600px;
     /*Шрифты подгонять, в макете все слито в картинку*/
@@ -941,6 +946,10 @@ body {
 }
 .partners {
   background-color: #2d2c2c;
+  background-repeat: no-repeat;
+  background-image: url("../img/partners-bg-mobile.jpg");
+  background-position: center;
+  background-size: 100%;
 }
 .partners__wrapper {
   width: 100%;
@@ -983,12 +992,16 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
-  padding-bottom: 65px;
 }
 .partners__item {
   width: 115px;
+  padding-bottom: 40px;
+  text-align: center;
 }
 @media (min-width: 1536px) {
+  .partners {
+    background-image: url("../img/partners-bg-tablet.jpg");
+  }
   .partners__title {
     font-size: 69px;
     padding-top: 108px;
@@ -997,8 +1010,16 @@ body {
   .partners__items {
     width: 760px;
   }
+  .partners__item {
+    width: 245px;
+    padding-bottom: 85px;
+  }
 }
 @media (min-width: 2400px) {
+  .partners {
+    background-image: url("../img/partners-bg-desktop.jpg");
+    background-size: 125%;
+  }
   .partners__title {
     font-size: 83px;
     padding-top: 20px;
@@ -1010,6 +1031,9 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding-bottom: 140px;
+  }
+  .partners__item {
+    width: 200px;
   }
 }
 .events {
