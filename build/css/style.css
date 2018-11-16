@@ -1136,18 +1136,33 @@ body {
           flex-direction: column;
   border-top: 2px solid #FFFFFF;
   border-bottom: 2px solid #FFFFFF;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
 }
 .event__wrapper {
   margin: 0 auto;
 }
 .event--interactive {
   background-color: #d76052;
+  background-image: url("../img/interactive-event-bg-mobile.jpg");
+}
+.event--interactive p::before {
+  background-image: url("../img/interactivity-mobile.png");
 }
 .event--internal {
   background-color: #e4ac76;
+  background-image: url("../img/internal-event-bg-mobile.jpg");
+}
+.event--internal p::before {
+  background-image: url("../img/hard-disk-mobile.png");
 }
 .event--external {
   background-color: #448f85;
+  background-image: url("../img/external-event-bg-mobile.jpg");
+}
+.event--external p::before {
+  background-image: url("../img/usb-connection-mobile.png");
 }
 .event__title {
   color: #FFFFFF;
@@ -1156,6 +1171,7 @@ body {
   margin: 0;
   padding-top: 35px;
   padding-bottom: 73px;
+  text-transform: uppercase;
 }
 .event__title b {
   font-size: 68px;
@@ -1165,11 +1181,22 @@ body {
 .event__description {
   font-size: 29px;
   color: #FFFFFF;
-  width: 500px;
+  width: 620px;
   padding-left: 120px;
   padding-bottom: 50px;
-  font-weight: 400;
+  font-weight: 300;
   margin: 0;
+  position: relative;
+}
+.event__description::before {
+  display: table;
+  content: "";
+  width: 90px;
+  height: 120px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-repeat: no-repeat;
 }
 .event__more {
   margin: 0 auto;
