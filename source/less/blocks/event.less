@@ -85,7 +85,32 @@
     font-size: 27px;
   }
 
-  // @media (min-width: @tablet-width) {
+  @media (min-width: @tablet-width) {
+    background-position: center -50px;
 
-  // }
+    &__wrapper {
+      margin: 0;
+    }
+    &__title {
+      text-align: center;
+      width: 430px;
+      margin: 0 auto;
+      padding-bottom: 25px;
+
+      & b {
+        display: block;
+      }
+    }
+    &__content {
+      background-color: #FFFFFF;
+      padding: 20px 0 15px 0;
+    }
+    &__description {
+      font-size: 20px;
+      color: #000000;
+      padding: 0;
+      width: 350px;
+      margin: 0 auto;
+    }
+  }
 }

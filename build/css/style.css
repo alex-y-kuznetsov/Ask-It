@@ -1212,6 +1212,34 @@ body {
   font-weight: 400;
   font-size: 27px;
 }
+@media (min-width: 1536px) {
+  .event {
+    background-position: center -50px;
+  }
+  .event__wrapper {
+    margin: 0;
+  }
+  .event__title {
+    text-align: center;
+    width: 430px;
+    margin: 0 auto;
+    padding-bottom: 25px;
+  }
+  .event__title b {
+    display: block;
+  }
+  .event__content {
+    background-color: #FFFFFF;
+    padding: 20px 0 15px 0;
+  }
+  .event__description {
+    font-size: 20px;
+    color: #000000;
+    padding: 0;
+    width: 350px;
+    margin: 0 auto;
+  }
+}
 .about-us__wrapper {
   width: 100%;
   margin: 0 auto;
@@ -1310,6 +1338,47 @@ body {
   padding-top: 90px;
   padding-bottom: 15px;
   text-align: center;
+  position: relative;
+}
+.stats__number::before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  top: 0;
+  left: 41%;
+}
+.stats__number--audiences {
+  color: #4ca59a;
+}
+.stats__number--audiences::before {
+  background-color: #4ca59a;
+  -webkit-box-shadow: 0 0 0 3px #FFFFFF,
+          0 0 0 15px #a5d2cc;
+          box-shadow: 0 0 0 3px #FFFFFF,
+          0 0 0 15px #a5d2cc;
+}
+.stats__number--hours {
+  color: #f26250;
+}
+.stats__number--hours::before {
+  background-color: #f26250;
+  -webkit-box-shadow: 0 0 0 3px #FFFFFF,
+          0 0 0 15px #f8b0a7;
+          box-shadow: 0 0 0 3px #FFFFFF,
+          0 0 0 15px #f8b0a7;
+}
+.stats__number--events {
+  color: #f0a765;
+}
+.stats__number--events::before {
+  background-color: #f0a765;
+  -webkit-box-shadow: 0 0 0 3px #FFFFFF,
+          0 0 0 15px #f7d3b2;
+          box-shadow: 0 0 0 3px #FFFFFF,
+          0 0 0 15px #f7d3b2;
 }
 .stats__descriptions {
   font-weight: 300;
@@ -1317,6 +1386,16 @@ body {
   padding-bottom: 35px;
   border-bottom: 2px solid;
   display: block;
+  text-align: center;
+}
+.stats__descriptions--audiences {
+  border-color: #4ca59a;
+}
+.stats__descriptions--hours {
+  border-color: #f26250;
+}
+.stats__descriptions--events {
+  border-color: #f0a765;
 }
 @media (min-width: 1536px) {
   .stats__item {
@@ -1325,6 +1404,29 @@ body {
   .stats__number {
     font-size: 112px;
     padding-bottom: 58px;
+  }
+  .stats__number::before {
+    width: 70px;
+    height: 70px;
+    left: 42%;
+  }
+  .stats__number--audiences::before {
+    -webkit-box-shadow: 0 0 0 3px #FFFFFF,
+            0 0 0 22px #a5d2cc;
+            box-shadow: 0 0 0 3px #FFFFFF,
+            0 0 0 22px #a5d2cc;
+  }
+  .stats__number--hours::before {
+    -webkit-box-shadow: 0 0 0 3px #FFFFFF,
+            0 0 0 22px #f8b0a7;
+            box-shadow: 0 0 0 3px #FFFFFF,
+            0 0 0 22px #f8b0a7;
+  }
+  .stats__number--events::before {
+    -webkit-box-shadow: 0 0 0 3px #FFFFFF,
+            0 0 0 22px #f7d3b2;
+            box-shadow: 0 0 0 3px #FFFFFF,
+            0 0 0 22px #f7d3b2;
   }
   .stats__descriptions {
     font-size: 54px;
@@ -1341,6 +1443,29 @@ body {
   .stats__number {
     font-size: 69px;
     padding-bottom: 24px;
+  }
+  .stats__number::before {
+    width: 60px;
+    height: 60px;
+    left: 39%;
+  }
+  .stats__number--audiences::before {
+    -webkit-box-shadow: 0 0 0 3px #FFFFFF,
+            0 0 0 15px #a5d2cc;
+            box-shadow: 0 0 0 3px #FFFFFF,
+            0 0 0 15px #a5d2cc;
+  }
+  .stats__number--hours::before {
+    -webkit-box-shadow: 0 0 0 3px #FFFFFF,
+            0 0 0 15px #f8b0a7;
+            box-shadow: 0 0 0 3px #FFFFFF,
+            0 0 0 15px #f8b0a7;
+  }
+  .stats__number--events::before {
+    -webkit-box-shadow: 0 0 0 3px #FFFFFF,
+            0 0 0 15px #f7d3b2;
+            box-shadow: 0 0 0 3px #FFFFFF,
+            0 0 0 15px #f7d3b2;
   }
   .stats__descriptions {
     font-size: 33px;

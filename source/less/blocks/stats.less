@@ -16,6 +16,45 @@
     padding-top: 90px;
     padding-bottom: 15px;
     text-align: center;
+    position: relative;
+
+    &::before {
+      display: block;
+      content: "";
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      top: 0;
+      left: 41%;
+    }
+    &--audiences {
+      color: #4ca59a;
+      &::before {
+        background-color: #4ca59a;
+        box-shadow:
+          0 0 0 3px #FFFFFF,
+          0 0 0 15px #a5d2cc;
+      }
+    }
+    &--hours {
+      color: #f26250;
+      &::before {
+        background-color: #f26250;
+        box-shadow:
+          0 0 0 3px #FFFFFF,
+          0 0 0 15px #f8b0a7;
+      }
+    }
+    &--events {
+      color: #f0a765;
+      &::before {
+        background-color: #f0a765;
+        box-shadow:
+          0 0 0 3px #FFFFFF,
+          0 0 0 15px #f7d3b2;
+      }
+    }
   }
   &__descriptions {
     font-weight: 300;
@@ -23,6 +62,17 @@
     padding-bottom: 35px;
     border-bottom: 2px solid;
     display: block;
+    text-align: center;
+
+    &--audiences {
+      border-color: #4ca59a;
+    }
+    &--hours {
+      border-color: #f26250;
+    }
+    &--events {
+      border-color: #f0a765;
+    }
   }
 
   @media (min-width: @tablet-width) {
@@ -32,6 +82,33 @@
     &__number {
       font-size: 112px;
       padding-bottom: 58px;
+
+      &::before {
+        width: 70px;
+        height: 70px;
+        left: 42%;
+      }
+      &--audiences {
+        &::before {
+          box-shadow:
+            0 0 0 3px #FFFFFF,
+            0 0 0 22px #a5d2cc;
+        }
+      }
+      &--hours {
+        &::before {
+          box-shadow:
+            0 0 0 3px #FFFFFF,
+            0 0 0 22px #f8b0a7;
+        }
+      }
+      &--events {
+        &::before {
+          box-shadow:
+            0 0 0 3px #FFFFFF,
+            0 0 0 22px #f7d3b2;
+        }
+      }
     }
     &__descriptions {
       font-size: 54px;
@@ -47,6 +124,33 @@
     &__number {
       font-size: 69px;
       padding-bottom: 24px;
+
+      &::before {
+        width: 60px;
+        height: 60px;
+        left: 39%;
+      }
+      &--audiences {
+        &::before {
+          box-shadow:
+            0 0 0 3px #FFFFFF,
+            0 0 0 15px #a5d2cc;
+        }
+      }
+      &--hours {
+        &::before {
+          box-shadow:
+            0 0 0 3px #FFFFFF,
+            0 0 0 15px #f8b0a7;
+        }
+      }
+      &--events {
+        &::before {
+          box-shadow:
+            0 0 0 3px #FFFFFF,
+            0 0 0 15px #f7d3b2;
+        }
+      }
     }
     &__descriptions {
       font-size: 33px;
