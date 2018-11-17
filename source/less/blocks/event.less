@@ -17,6 +17,9 @@
     & p::before {
       background-image: url("../img/interactivity-mobile.png");
     }
+    & .event__more {
+      color: #f26250;
+    }
   }
   &--internal {
     background-color: #e4ac76;
@@ -25,6 +28,9 @@
     & p::before {
       background-image: url("../img/hard-disk-mobile.png");
     }
+    & .event__more {
+      color: #f0a765;
+    }
   }
   &--external {
     background-color: #448f85;
@@ -32,6 +38,9 @@
 
     & p::before {
       background-image: url("../img/usb-connection-mobile.png");
+    }
+    & .event__more {
+      color: #4ca59a;
     }
   }
   &__title {
@@ -79,38 +88,106 @@
     border-radius: 25px;
     text-decoration: none;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 6px;
+    padding-top: 7px;
+    padding-bottom: 9px;
     font-weight: 400;
     font-size: 27px;
   }
 
   @media (min-width: @tablet-width) {
-    background-position: center -50px;
+    background-position: center 0;
+
+    &--interactive {
+      background-image: url("../img/interactive-event-bg-tablet.jpg");
+      order: 2;
+      transform: scale(1.2);
+
+      & p::before {
+        background-image: url("../img/interactivity-tablet.png");
+        width: 70px;
+        height: 90px;
+        top: -100px;
+        left: 38%;
+      }
+      & .event__more {
+        background-color: #f26250;
+        color: #FFFFFF;
+      }
+    }
+    &--internal {
+      background-image: url("../img/internal-event-bg-tablet.jpg");
+      order: 3;
+      margin-right: 0;
+
+      & p::before {
+        background-image: url("../img/hard-disk-tablet.png");
+        width: 50px;
+        height: 75px;
+        left: 42%;
+      }
+      & .event__more {
+         background-color: #f0a765;
+         color: #FFFFFF;
+      }
+    }
+    &--external {
+      background-image: url("../img/external-event-bg-tablet.jpg");
+      order: 1;
+
+      & p::before {
+        background-image: url("../img/usb-connection-tablet.png");
+        width: 45px;
+        height: 70px;
+        left: 42%;
+      }
+      & .event__more {
+        background-color: #4ca59a;
+        color: #FFFFFF;
+      }
+    }
 
     &__wrapper {
       margin: 0;
     }
     &__title {
       text-align: center;
-      width: 430px;
+      width: 100%;
       margin: 0 auto;
-      padding-bottom: 25px;
+      padding-bottom: 35px;
+      position: relative;
 
       & b {
         display: block;
       }
+      &::after {
+        display: block;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        background-color: #FFFFFF;
+        bottom: 6px;
+      }
     }
     &__content {
       background-color: #FFFFFF;
-      padding: 20px 0 15px 0;
+      padding: 120px 0 5px 0;
     }
     &__description {
       font-size: 20px;
       color: #000000;
       padding: 0;
+      padding-bottom: 20px;
       width: 350px;
       margin: 0 auto;
+
+      &::before {
+        top: -90px;
+        text-align: center;
+      }
+    }
+    &__more {
+      margin-bottom: 20px;
     }
   }
 }

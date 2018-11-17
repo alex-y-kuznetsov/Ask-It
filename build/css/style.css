@@ -1070,14 +1070,6 @@ body {
     width: 455px;
     margin-right: 80px;
   }
-  .events__item:last-child {
-    margin-right: 0;
-  }
-  .events__item:nth-child(2) {
-    width: 520px;
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-  }
   .events__title {
     display: block;
     margin: 0 auto;
@@ -1150,6 +1142,9 @@ body {
 .event--interactive p::before {
   background-image: url("../img/interactivity-mobile.png");
 }
+.event--interactive .event__more {
+  color: #f26250;
+}
 .event--internal {
   background-color: #e4ac76;
   background-image: url("../img/internal-event-bg-mobile.jpg");
@@ -1157,12 +1152,18 @@ body {
 .event--internal p::before {
   background-image: url("../img/hard-disk-mobile.png");
 }
+.event--internal .event__more {
+  color: #f0a765;
+}
 .event--external {
   background-color: #448f85;
   background-image: url("../img/external-event-bg-mobile.jpg");
 }
 .event--external p::before {
   background-image: url("../img/usb-connection-mobile.png");
+}
+.event--external .event__more {
+  color: #4ca59a;
 }
 .event__title {
   color: #FFFFFF;
@@ -1207,37 +1208,107 @@ body {
   border-radius: 25px;
   text-decoration: none;
   text-align: center;
-  padding-top: 10px;
-  padding-bottom: 6px;
+  padding-top: 7px;
+  padding-bottom: 9px;
   font-weight: 400;
   font-size: 27px;
 }
 @media (min-width: 1536px) {
   .event {
-    background-position: center -50px;
+    background-position: center 0;
+  }
+  .event--interactive {
+    background-image: url("../img/interactive-event-bg-tablet.jpg");
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .event--interactive p::before {
+    background-image: url("../img/interactivity-tablet.png");
+    width: 70px;
+    height: 90px;
+    top: -100px;
+    left: 38%;
+  }
+  .event--interactive .event__more {
+    background-color: #f26250;
+    color: #FFFFFF;
+  }
+  .event--internal {
+    background-image: url("../img/internal-event-bg-tablet.jpg");
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin-right: 0;
+  }
+  .event--internal p::before {
+    background-image: url("../img/hard-disk-tablet.png");
+    width: 50px;
+    height: 75px;
+    left: 42%;
+  }
+  .event--internal .event__more {
+    background-color: #f0a765;
+    color: #FFFFFF;
+  }
+  .event--external {
+    background-image: url("../img/external-event-bg-tablet.jpg");
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .event--external p::before {
+    background-image: url("../img/usb-connection-tablet.png");
+    width: 45px;
+    height: 70px;
+    left: 42%;
+  }
+  .event--external .event__more {
+    background-color: #4ca59a;
+    color: #FFFFFF;
   }
   .event__wrapper {
     margin: 0;
   }
   .event__title {
     text-align: center;
-    width: 430px;
+    width: 100%;
     margin: 0 auto;
-    padding-bottom: 25px;
+    padding-bottom: 35px;
+    position: relative;
   }
   .event__title b {
     display: block;
   }
+  .event__title::after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: #FFFFFF;
+    bottom: 6px;
+  }
   .event__content {
     background-color: #FFFFFF;
-    padding: 20px 0 15px 0;
+    padding: 120px 0 5px 0;
   }
   .event__description {
     font-size: 20px;
     color: #000000;
     padding: 0;
+    padding-bottom: 20px;
     width: 350px;
     margin: 0 auto;
+  }
+  .event__description::before {
+    top: -90px;
+    text-align: center;
+  }
+  .event__more {
+    margin-bottom: 20px;
   }
 }
 .about-us__wrapper {
