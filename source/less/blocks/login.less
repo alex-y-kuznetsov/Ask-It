@@ -1,11 +1,4 @@
 .login {
-  @media (min-width: @tablet-width) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 120px;
-    margin-right: auto;
-  }
   &__link {
     display: block;
     width: 100%;
@@ -13,6 +6,46 @@
     text-decoration: none;
     text-align: center;
     vertical-align: middle;
+    padding: 7px 0 7px 0;
+    display: block;
+    position: relative;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 120px;
+    margin-right: auto;
+
+    &__link {
+      font-size: 12px;
+      padding-top: 25px;
+
+      &::before {
+        display: table;
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 25px;
+        top: 0;
+        left: 20px;
+        background-repeat: no-repeat;
+        background-repeat: no-repeat;
+        background-size: 85%;
+      }
+      &--login {
+        &::before {
+          background-image: url("../img/sign-in.png");
+        }
+      }
+      &--register {
+        &::before {
+          background-image: url("../img/register.png");
+        }
+      }
+    }
   }
 
   @media (min-width: @desktop-width) {

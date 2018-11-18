@@ -421,6 +421,12 @@ body {
   margin: 0;
   text-align: center;
 }
+.menu__link {
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 7px 0 7px 0;
+  display: block;
+}
 @media (min-width: 1536px) {
   .menu {
     -webkit-box-orient: horizontal;
@@ -439,6 +445,8 @@ body {
     color: #FFFFFF;
     text-decoration: none;
     text-align: center;
+    padding-top: 35px;
+    padding-bottom: 40px;
   }
 }
 @media (min-width: 2400px) {
@@ -452,6 +460,16 @@ body {
     padding-bottom: 85px;
   }
 }
+.login__link {
+  width: 100%;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  padding: 7px 0 7px 0;
+  display: block;
+  position: relative;
+}
 @media (min-width: 1536px) {
   .login {
     display: -webkit-box;
@@ -464,17 +482,33 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 120px;
     margin-right: auto;
   }
-}
-.login__link {
-  display: block;
-  width: 100%;
-  color: #FFFFFF;
-  text-decoration: none;
-  text-align: center;
-  vertical-align: middle;
+  .login__link {
+    font-size: 12px;
+    padding-top: 25px;
+  }
+  .login__link::before {
+    display: table;
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 25px;
+    top: 0;
+    left: 20px;
+    background-repeat: no-repeat;
+    background-size: 85%;
+  }
+  .login__link--login::before {
+    background-image: url("../img/sign-in.png");
+  }
+  .login__link--register::before {
+    background-image: url("../img/register.png");
+  }
 }
 @media (min-width: 2400px) {
   .login {
@@ -580,6 +614,7 @@ body {
 }
 .event-manage__join {
   width: 144px;
+  cursor: pointer;
 }
 .event-manage__code {
   width: 138px;
@@ -667,12 +702,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 600px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding-bottom: 90px;
   margin: 0 auto;
 }

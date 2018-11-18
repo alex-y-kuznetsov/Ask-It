@@ -12,7 +12,7 @@
     <!-- Header -->
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="logo logo--header" href="#">
+        <a class="logo logo--header">
           <picture>
             <source srcset="img/logo-desktop.png" media="(min-width: 2400px)">
             <img src="img/logo-mobile.png" class="logo__img" alt="Logo">
@@ -20,16 +20,16 @@
         </a>
         <div class="page-header__interface">
           <ul class="menu">
-            <li><a href="#" class="menu__link">Home</a></li>
-            <li><a href="#" class="menu__link">How It Works</a></li>
-            <li><a href="#" class="menu__link">Features</a></li>
-            <li><a href="#" class="menu__link">Partners</a></li>
-            <li><a href="#" class="menu__link">Events</a></li>
-            <li><a href="#" class="menu__link">About Us</a></li>
+            <li><a class="menu__link">Home</a></li>
+            <li><a href="#how-it-works" class="menu__link">How It Works</a></li>
+            <li><a href="#features" class="menu__link">Features</a></li>
+            <li><a href="#partners" class="menu__link">Partners</a></li>
+            <li><a href="#events" class="menu__link">Events</a></li>
+            <li><a href="#about-us" class="menu__link">About Us</a></li>
           </ul>
           <div class="login">
-            <a href="#" class="login__link">Log In</a>
-            <a href="#" class="login__link">Register</a>
+            <a href="#" class="login__link login__link--login">Log In</a>
+            <a href="#" class="login__link login__link--register">Register</a>
           </div>
         </div>
         <button class="menu-toggler"></button>
@@ -42,7 +42,7 @@
       <h1 class="visually-hidden">Ask It - online platform for operating events</h1>
 
       <!-- Event Manager -->
-      <section class="event-manage">
+      <section class="event-manage" id="event-manage">
         <div class="event-manage__wrapper">
           <div class="event-manage__contents">
             <h2 class="event-manage__title section-title">Live Interaction From Audience</h2>
@@ -59,7 +59,7 @@
       </section>
 
       <!-- How It Works -->
-      <section class="how-it-works">
+      <section class="how-it-works" id="how-it-works">
         <div class="how-it-works__wrapper">
           <h2 class="how-it-works__title section-title">How It Works</h2>
           <div class="how-it-works__items">
@@ -92,7 +92,7 @@
       </section>
 
       <!-- Questions -->
-      <section class="questions">
+      <section class="questions" id="questions">
         <div class="questions__wrapper">
           <div class="questions__links">
             <a href="#" class="questions__question question question--now">Ask a Question Right Now</a>
@@ -108,7 +108,7 @@
       </section>
 
       <!-- Features -->
-      <section class="features">
+      <section class="features" id="features">
         <div class="features__wrapper">
           <h2 class="features__title section-title">Features</h2>
           <div class="features__items">
@@ -159,7 +159,7 @@
       </section>
 
       <!-- Partners -->
-      <section class="partners">
+      <section class="partners" id="partners">
         <div class="partners__wrapper">
           <h2 class="partners__title section-title">Partners</h2>
           <div class="partners__items">
@@ -217,7 +217,7 @@
       </section>
 
       <!-- Events -->
-      <section class="events">
+      <section class="events" id="events">
         <h2 class="events__title section-title">Events</h2>
         <div class="events__wrapper">
           <article class="events__item event event--interactive">
@@ -251,7 +251,7 @@
       </section>
 
       <!-- About Us -->
-      <section class="about-us">
+      <section class="about-us" id="about-us">
         <h2 class="about-us__title section__title">About Us</h2>
         <div class="about-us__wrapper">
           <div class="about-us__stats stats">
