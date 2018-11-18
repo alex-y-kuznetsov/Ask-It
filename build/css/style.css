@@ -516,9 +516,16 @@ body {
     /*Временно до графики*/
   }
   .login__link {
-    font-size: 39px;
-    padding-top: 80px;
-    padding-bottom: 85px;
+    font-size: 19px;
+    padding-top: 110px;
+    padding-bottom: 55px;
+  }
+  .login__link::before {
+    width: 35px;
+    height: 40px;
+    top: 60px;
+    left: 53px;
+    background-size: 100%;
   }
 }
 .menu-toggler {
@@ -635,6 +642,8 @@ body {
   }
   .event-manage__contents {
     padding-right: 600px;
+    background-repeat: no-repeat;
+    background-image: url("../img/iphone.jpg");
     /*Шрифты подгонять, в макете все слито в картинку*/
   }
 }
