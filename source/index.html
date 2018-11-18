@@ -13,7 +13,10 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <a class="logo logo--header" href="#">
-          <img src="img/logo-mobile.png" width="110" height="125" class="logo__img" alt="Logo">
+          <picture>
+            <source srcset="img/logo-desktop.png" media="(min-width: 2400px)">
+            <img src="img/logo-mobile.png" class="logo__img" alt="Logo">
+          </picture>
         </a>
         <div class="page-header__interface">
           <ul class="menu">
@@ -283,7 +286,11 @@
         <!-- We Are -->
         <div clas="page-footer__we-are we-are">
           <a class="logo page-footer__logo" href="#">
-            <img src="#" class="logo__img" alt="Logo">
+            <picture>
+            <source srcset="img/logo-desktop.png" media="(min-width: 2400px)">
+              <source srcset="img/logo-tablet.png" media="(min-width: 1536px)">
+            <img src="img/logo-mobile.png" class="logo__img" alt="Logo">
+          </picture>
           </a>
           <p class="we-are__description">We are AskVote.io. We are a online platform for operating events effectively. We're working on a web application for facilitating anonymous questions and answers sessions. The application is to be used mainly by corporate and government customers. </p>
         </div>

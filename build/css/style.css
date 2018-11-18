@@ -370,6 +370,22 @@ body {
             justify-content: space-between;
   }
 }
+@media (min-width: 2400px) {
+  .page-header__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
 .logo {
   margin: 0 auto;
   display: block;
@@ -379,6 +395,12 @@ body {
 @media (min-width: 1536px) {
   .logo--header {
     display: none;
+  }
+}
+@media (min-width: 2400px) {
+  .logo--header {
+    display: initial;
+    margin: 0;
   }
 }
 .section-title {
@@ -421,7 +443,8 @@ body {
 }
 @media (min-width: 2400px) {
   .menu {
-    width: 1500px;
+    width: 1120px;
+    padding-left: 100px;
   }
   .menu__link {
     font-size: 39px;
@@ -1097,20 +1120,14 @@ body {
 }
 @media (min-width: 2400px) {
   .events {
-    padding-bottom: 60px;
+    padding-bottom: 90px;
   }
   .events__wrapper {
-    width: 1800px;
+    width: 1700px;
   }
   .events__item {
     width: 580px;
     position: relative;
-  }
-  .events__item:nth-child(2) {
-    z-index: 2;
-    width: 660px;
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
   }
   .events__title {
     font-size: 83px;
@@ -1188,6 +1205,7 @@ body {
   font-weight: 300;
   margin: 0;
   position: relative;
+  text-align: center;
 }
 .event__description::before {
   display: table;
@@ -1216,6 +1234,9 @@ body {
 @media (min-width: 1536px) {
   .event {
     background-position: center 0;
+    -webkit-box-shadow: 0 0 30px 0 #b7b7b7;
+            box-shadow: 0 0 30px 0 #b7b7b7;
+    border: none;
   }
   .event--interactive {
     background-image: url("../img/interactive-event-bg-tablet.jpg");
@@ -1309,6 +1330,15 @@ body {
   }
   .event__more {
     margin-bottom: 20px;
+  }
+}
+@media (min-width: 2400px) {
+  .event {
+    margin: 0;
+  }
+  .event--interactive {
+    position: relative;
+    z-index: 1;
   }
 }
 .about-us__wrapper {

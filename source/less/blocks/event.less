@@ -67,6 +67,7 @@
     font-weight: 300;
     margin: 0;
     position: relative;
+    text-align: center;
 
     &::before {
       display: table;
@@ -96,6 +97,8 @@
 
   @media (min-width: @tablet-width) {
     background-position: center 0;
+    box-shadow: 0 0 30px 0 #b7b7b7;
+    border: none;
 
     &--interactive {
       background-image: url("../img/interactive-event-bg-tablet.jpg");
@@ -188,6 +191,15 @@
     }
     &__more {
       margin-bottom: 20px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0;
+
+    &--interactive {
+      position: relative;
+      z-index: 1;
     }
   }
 }
