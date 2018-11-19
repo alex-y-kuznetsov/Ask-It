@@ -23,9 +23,15 @@
       padding-bottom: 115px;
     }
     &__links {
+      width: 880px;
       padding-bottom: 150px;
     }
+    &__link {
+      display: block;
+      transform: scale(2);
+    }
   }
+
   @media (min-width: @desktop-width) {
     &__title {
       font-size: 28px;
@@ -33,6 +39,10 @@
     }
     &__links {
       padding-bottom: 0;
+      width: initial;
+    }
+    &__link {
+      transform: scale(1);
     }
   }
 }

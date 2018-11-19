@@ -641,15 +641,19 @@ body {
     background-size: 100%;
   }
   .event-manage__contents {
-    padding-right: 600px;
+    padding-right: 400px;
     background-repeat: no-repeat;
-    background-image: url("../img/iphone.jpg");
+    background-image: url("../img/iphone.png");
+    background-position: 80% 130px;
+    background-size: 300px;
     /*Шрифты подгонять, в макете все слито в картинку*/
   }
 }
 @media (min-width: 2400px) {
   .event-manage__contents {
     padding-right: 860px;
+    background-position: 80% 330px;
+    background-size: 700px;
   }
   .event-manage__title {
     font-size: 83px;
@@ -833,11 +837,12 @@ body {
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     margin-right: auto;
-    padding-top: 38px;
-    padding-bottom: 0;
+    padding: 70px 0 70px 0;
   }
   .questions__question {
     padding-bottom: 33px;
+    -webkit-transform: scale(1.6);
+            transform: scale(1.6);
   }
   .questions__texts {
     margin: 0 auto;
@@ -887,14 +892,16 @@ body {
   }
   .questions__question {
     position: relative;
+    -webkit-transform: scale(3);
+            transform: scale(3);
   }
   .questions__question:first-child {
-    left: -350px;
-    top: 350px;
+    left: -220px;
+    top: 310px;
   }
   .questions__question:last-child {
-    left: -350px;
-    bottom: 350px;
+    left: -220px;
+    bottom: 310px;
   }
 }
 .question {
@@ -1860,7 +1867,13 @@ body {
     padding-bottom: 115px;
   }
   .social__links {
+    width: 880px;
     padding-bottom: 150px;
+  }
+  .social__link {
+    display: block;
+    -webkit-transform: scale(2);
+            transform: scale(2);
   }
 }
 @media (min-width: 2400px) {
@@ -1870,6 +1883,11 @@ body {
   }
   .social__links {
     padding-bottom: 0;
+    width: initial;
+  }
+  .social__link {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 .subscribe__title {
@@ -1884,6 +1902,18 @@ body {
   width: 525px;
   margin: 0 auto;
   padding-bottom: 192px;
+  position: relative;
+}
+.subscribe__form::after {
+  display: table;
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: 5px;
+  right: 5px;
+  background-repeat: no-repeat;
+  background-image: url("../img/envelope.png");
 }
 .subscribe__email {
   background-color: transparent;
@@ -1908,6 +1938,13 @@ body {
   }
   .subscribe__form {
     padding-bottom: 375px;
+    width: 1085px;
+  }
+  .subscribe__form::after {
+    width: 100px;
+    height: 70px;
+    right: -20px;
+    background-size: 70%;
   }
   .subscribe__email {
     font-size: 61px;
@@ -1920,6 +1957,14 @@ body {
   }
   .subscribe__form {
     padding-bottom: 0;
+    width: 380px;
+  }
+  .subscribe__form::after {
+    width: 35px;
+    height: 35px;
+    right: 5px;
+    top: -5px;
+    background-size: initial;
   }
   .subscribe__email {
     font-size: 22px;

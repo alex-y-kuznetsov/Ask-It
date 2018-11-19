@@ -11,6 +11,19 @@
     width: 525px;
     margin: 0 auto;
     padding-bottom: 192px;
+    position: relative;
+
+    &::after {
+      display: table;
+      content: "";
+      position: absolute;
+      width: 35px;
+      height: 35px;
+      top: 5px;
+      right: 5px;
+      background-repeat: no-repeat;
+      background-image: url("../img/envelope.png");
+    }
   }
   &__email {
     background-color: transparent;
@@ -36,6 +49,14 @@
     }
     &__form {
       padding-bottom: 375px;
+      width: 1085px;
+
+      &::after {
+        width: 100px;
+        height: 70px;
+        right: -20px;
+        background-size: 70%;
+      }
     }
     &__email {
       font-size: 61px;
@@ -48,6 +69,15 @@
     }
     &__form {
       padding-bottom: 0;
+      width: 380px;
+
+      &::after {
+        width: 35px;
+        height: 35px;
+        right: 5px;
+        top: -5px;
+        background-size: initial;
+      }
     }
     &__email {
       font-size: 22px;
