@@ -1,0 +1,30 @@
+.bookmark {
+  font-size: 42px;
+  font-weight: 300;
+  color: #FFFFFF;
+  transform: rotate(-90deg);
+  border: 1px solid #FFFFFF;
+  padding: 10px 20px 0 150px;
+
+  &::before {
+    display: table;
+    position: relative;
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: #FFFFFF;
+    left: -105px;
+    top: 28px;
+  }
+  &::after {
+    display: table;
+    position: relative;
+    content: "";
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    left: -130px;
+    top: -32px;
+  }
+}

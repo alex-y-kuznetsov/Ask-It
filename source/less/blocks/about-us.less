@@ -1,6 +1,9 @@
 .about-us {
   .wrapper();
 
+  &__bookmark {
+    display: none;
+  }
   &__stats {
     display: flex;
     flex-direction: row;
@@ -28,6 +31,20 @@
     }
   }
   @media (min-width: @desktop-width) {
+    &__bookmark {
+      display: initial;
+      color: #037693;
+      position: absolute;
+      left: 0;
+      top: -236px;
+      border-color: #037693;
+      border-right: none;
+
+      &::after,
+      &::before {
+        background-color: #037693;
+      }
+    }
     &__who {
       padding-left: 400px;
     }
@@ -41,6 +58,7 @@
       flex-direction: row-reverse;
       justify-content: space-between;
       align-items: center;
+      position: relative;
     }
   }
 }

@@ -781,6 +781,9 @@ body {
     width: 2360px;
   }
 }
+.questions__bookmark {
+  display: none;
+}
 .questions__links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -863,9 +866,20 @@ body {
   }
 }
 @media (min-width: 2400px) {
+  .questions__wrapper {
+    position: relative;
+  }
+  .questions__bookmark {
+    display: initial;
+    position: absolute;
+    left: 0;
+    top: 140px;
+  }
   .questions__texts {
     margin: 0;
     padding-left: 400px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .questions__texts * {
     text-align: left;
@@ -897,11 +911,11 @@ body {
   }
   .questions__question:first-child {
     left: -220px;
-    top: 310px;
+    top: 200px;
   }
   .questions__question:last-child {
     left: -220px;
-    bottom: 310px;
+    bottom: 200px;
   }
 }
 .question {
@@ -923,6 +937,36 @@ body {
 }
 .question--choose {
   background-image: url("../img/magnifying-glass-mobile.png");
+}
+.bookmark {
+  font-size: 42px;
+  font-weight: 300;
+  color: #FFFFFF;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  border: 1px solid #FFFFFF;
+  padding: 10px 20px 0 150px;
+}
+.bookmark::before {
+  display: table;
+  position: relative;
+  content: "";
+  width: 100px;
+  height: 2px;
+  background-color: #FFFFFF;
+  left: -105px;
+  top: 28px;
+}
+.bookmark::after {
+  display: table;
+  position: relative;
+  content: "";
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+  left: -130px;
+  top: -32px;
 }
 .features__wrapper {
   width: 100%;
@@ -1455,6 +1499,9 @@ body {
     width: 2360px;
   }
 }
+.about-us__bookmark {
+  display: none;
+}
 .about-us__stats {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1488,6 +1535,19 @@ body {
   }
 }
 @media (min-width: 2400px) {
+  .about-us__bookmark {
+    display: initial;
+    color: #037693;
+    position: absolute;
+    left: 0;
+    top: -236px;
+    border-color: #037693;
+    border-right: none;
+  }
+  .about-us__bookmark::after,
+  .about-us__bookmark::before {
+    background-color: #037693;
+  }
   .about-us__who {
     padding-left: 400px;
   }
@@ -1510,6 +1570,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    position: relative;
   }
 }
 .stats {
