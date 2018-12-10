@@ -7,6 +7,17 @@
     font-size: 47px;
     font-weight: 300;
     padding-bottom: 65px;
+    width: 320px;
+    margin: 0 auto;
+
+    &::after {
+      width: 72px;
+      height: 3px;
+      border-left: 58px solid #037693;
+      border-right: 9px solid #037693;
+      left: 25px;
+      bottom: 55px;
+    }
   }
   &__items {
     display: flex;
@@ -29,6 +40,15 @@
   @media (min-width: @tablet-width) {
     &__title {
       font-size: 57px;
+      width: 360px;
+
+      &::after {
+        left: 15px;
+        width: 80px;
+        height: 4px;
+        border-left-width: 65px;
+        border-right-width: 10px;
+      }
     }
     &__items {
       width: 1120px;
@@ -43,6 +63,16 @@
       font-size: 83px;
       padding-top: 145px;
       padding-bottom: 135px;
+      width: 560px;
+
+      &::after {
+        left: 40px;
+        bottom: 120px;
+        width: 128px;
+        height: 6px;
+        border-left-width: 102px;
+        border-right-width: 16px;
+      }
     }
     &__items {
       width: 1750px;
