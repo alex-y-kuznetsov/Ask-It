@@ -12,6 +12,18 @@
     color: #FFFFFF;
     padding-top: 43px;
     padding-bottom: 115px;
+    width: 200px;
+    margin: 0 auto;
+
+    &::after {
+      width: 72px;
+      height: 3px;
+      border-left: 58px solid #ffffff;
+      border-right: 9px solid #ffffff;
+      right: 18px;
+      bottom: 110px;
+      transform: rotate(180deg);
+    }
   }
   &__items {
     display: flex;
@@ -35,6 +47,16 @@
       font-size: 69px;
       padding-top: 108px;
       padding-bottom: 250px;
+      width: 300px;
+
+      &::after {
+        width: 120px;
+        height: 5px;
+        bottom: 235px;
+        right: 30px;
+        border-left-width: 85px;
+        border-right-width: 13px;
+      }
     }
     &__items {
       width: 760px;
@@ -52,6 +74,16 @@
       font-size: 83px;
       padding-top: 20px;
       padding-bottom: 135px;
+      width: 350px;
+
+      &::after {
+        width: 140px;
+        height: 6px;
+        bottom: 130px;
+        right: 30px;
+        border-left-width: 102px;
+        border-right-width: 16px;
+      }
     }
     &__items {
       width: 2110px;

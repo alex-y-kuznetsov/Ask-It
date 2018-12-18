@@ -24,11 +24,21 @@
     &__title {
       display: block;
       margin: 0 auto;
+      width: 205px;
       font-weight: 300;
-      font-size: 45px;
+      font-size: 63px;
       color: #037693;
       padding-top: 155px;
       padding-bottom: 160px;
+
+      &::after {
+        width: 120px;
+        height: 3px;
+        bottom: 156px;
+        right: 70px;
+        border-left: 85px solid #037693;
+        border-right: 13px solid #037693;
+      }
     }
   }
   @media (min-width: @desktop-width) {
@@ -44,7 +54,17 @@
     &__title {
       font-size: 83px;
       padding-top: 80px;
-      padding-bottom: 70px;
+      padding-bottom: 110px;
+      width: 280px;
+
+      &::after {
+        width: 140px;
+        height: 6px;
+        bottom: 105px;
+        right: 115px;
+        border-left-width: 102px;
+        border-right-width: 16px;
+      }
     }
   }
 }
