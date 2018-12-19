@@ -1530,6 +1530,11 @@ body {
   font-weight: 400;
   font-size: 27px;
 }
+@media (max-width: 1536px) {
+  .event__wrapper {
+    width: 640px;
+  }
+}
 @media (min-width: 1536px) {
   .event {
     background-position: center 0;
