@@ -592,7 +592,7 @@ body {
   padding-bottom: 32px;
   text-shadow: 0 10px 0 #000000;
   position: relative;
-  width: 630px;
+  width: 650px;
   margin: 0 auto;
 }
 .event-manage__title::before {
@@ -603,7 +603,7 @@ body {
   height: 5px;
   border-left: 6px solid #ffffff;
   border-right: 15px solid #ffffff;
-  right: 195px;
+  right: 205px;
   bottom: 15px;
 }
 .event-manage__title::after {
@@ -613,7 +613,7 @@ body {
   width: 180px;
   height: 5px;
   bottom: 15px;
-  right: 5px;
+  right: 10px;
   background-color: #ffffff;
 }
 .event-manage__description {
@@ -674,7 +674,7 @@ body {
   .event-manage__title::before {
     height: 6px;
     width: 40px;
-    right: 235px;
+    right: 240px;
     bottom: 15px;
     border-left-width: 8px;
     border-right-width: 15px;
@@ -682,7 +682,7 @@ body {
   .event-manage__title::after {
     height: 6px;
     width: 220px;
-    right: 5px;
+    right: 10px;
     bottom: 15px;
   }
   .event-manage__contents {
@@ -704,7 +704,7 @@ body {
     font-size: 83px;
     padding-top: 370px;
     padding-bottom: 57px;
-    width: 1190px;
+    width: 1200px;
   }
   .event-manage__title::before {
     height: 10px;
