@@ -362,6 +362,9 @@ body {
   display: none;
 }
 @media (min-width: 1536px) {
+  .page-header {
+    padding: 0 0 0 0;
+  }
   .page-header__interface {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -437,9 +440,10 @@ body {
   color: #FFFFFF;
   padding: 7px 0 7px 0;
   display: block;
+  font-weight: 300;
 }
 .menu__link:not([href]) {
-  opacity: 0.6;
+  font-weight: 700;
   text-decoration: underline;
 }
 @media (min-width: 1536px) {
@@ -451,8 +455,8 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 925px;
-    padding-left: 437px;
+    width: 1130px;
+    padding-left: 410px;
   }
   .menu__link {
     display: block;
@@ -460,8 +464,9 @@ body {
     color: #FFFFFF;
     text-decoration: none;
     text-align: center;
-    padding-top: 35px;
-    padding-bottom: 40px;
+    font-size: 25px;
+    padding-top: 50px;
+    padding-bottom: 55px;
   }
 }
 @media (min-width: 2400px) {
@@ -476,13 +481,13 @@ body {
   }
 }
 .login__link {
+  display: block;
   width: 100%;
   color: #FFFFFF;
   text-decoration: none;
   text-align: center;
   vertical-align: middle;
   padding: 7px 0 7px 0;
-  display: block;
   position: relative;
 }
 @media (min-width: 1536px) {
@@ -501,11 +506,12 @@ body {
         -ms-flex-align: center;
             align-items: center;
     width: 120px;
-    margin-right: auto;
+    margin: 0 auto 0 80px;
   }
   .login__link {
     font-size: 12px;
-    padding-top: 25px;
+    padding-top: 32px;
+    width: initial;
   }
   .login__link::before {
     display: table;
@@ -513,16 +519,17 @@ body {
     position: absolute;
     width: 20px;
     height: 25px;
-    top: 0;
-    left: 20px;
+    top: 5px;
     background-repeat: no-repeat;
-    background-size: 85%;
+    background-size: 100%;
   }
   .login__link--login::before {
     background-image: url("../img/sign-in.png");
+    left: 7px;
   }
   .login__link--register::before {
     background-image: url("../img/register.png");
+    left: 14px;
   }
 }
 @media (min-width: 2400px) {

@@ -7,7 +7,6 @@
     text-align: center;
     vertical-align: middle;
     padding: 7px 0 7px 0;
-    display: block;
     position: relative;
   }
 
@@ -17,11 +16,12 @@
     justify-content: space-between;
     align-items: center;
     width: 120px;
-    margin-right: auto;
+    margin: 0 auto 0 80px;
 
     &__link {
       font-size: 12px;
-      padding-top: 25px;
+      padding-top: 32px;
+      width: initial;
 
       &::before {
         display: table;
@@ -29,20 +29,20 @@
         position: absolute;
         width: 20px;
         height: 25px;
-        top: 0;
-        left: 20px;
+        top: 5px;
         background-repeat: no-repeat;
-        background-repeat: no-repeat;
-        background-size: 85%;
+        background-size: 100%;
       }
       &--login {
         &::before {
           background-image: url("../img/sign-in.png");
+          left: 7px;
         }
       }
       &--register {
         &::before {
           background-image: url("../img/register.png");
+          left: 14px;
         }
       }
     }
