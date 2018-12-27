@@ -438,6 +438,10 @@ body {
   padding: 7px 0 7px 0;
   display: block;
 }
+.menu__link:not([href]) {
+  opacity: 0.6;
+  text-decoration: underline;
+}
 @media (min-width: 1536px) {
   .menu {
     -webkit-box-orient: horizontal;
