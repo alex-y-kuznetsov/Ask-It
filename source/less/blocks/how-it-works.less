@@ -44,11 +44,12 @@
 
   @media (min-width: @tablet-width) {
     &__title {
-      font-size: 57px;
+      font-size: 55px;
+      padding-top: 33px;
       width: 360px;
 
       &::after {
-        left: 15px;
+        left: 30px;
         width: 80px;
         height: 4px;
         border-left-width: 65px;
@@ -56,11 +57,14 @@
       }
     }
     &__items {
-      width: 1120px;
-      padding-bottom: 30px;
+      width: 1165px;
+      padding-bottom: 0;
     }
     &__item {
-      width: 255px;
+      width: 240px;
+    }
+    &__description {
+      padding-bottom: 37px;
     }
   }
   @media (min-width: @desktop-width) {
