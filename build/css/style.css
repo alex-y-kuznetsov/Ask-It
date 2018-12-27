@@ -685,14 +685,20 @@ body {
 @media (min-width: 1536px) {
   .event-manage {
     background-image: url("../img/event-manage-bg-desktop.jpg");
-    background-position: center -25px;
+    background-position: center;
     background-size: 100%;
+  }
+  .event-manage__title {
+    font-size: 53px;
+    width: 760px;
+    padding-top: 240px;
+    padding-bottom: 47px;
   }
   .event-manage__title::before {
     height: 6px;
     width: 40px;
     right: 240px;
-    bottom: 15px;
+    bottom: 26px;
     border-left-width: 8px;
     border-right-width: 15px;
   }
@@ -700,15 +706,37 @@ body {
     height: 6px;
     width: 220px;
     right: 10px;
-    bottom: 15px;
+    bottom: 26px;
   }
   .event-manage__contents {
     padding-right: 400px;
     background-repeat: no-repeat;
     background-image: url("../img/iphone.png");
-    background-position: 80% 130px;
-    background-size: 300px;
-    /*Шрифты подгонять, в макете все слито в картинку*/
+    background-position: 89% 220px;
+    background-size: 455px;
+  }
+  .event-manage__description {
+    font-size: 33px;
+    padding-bottom: 162px;
+  }
+  .event-manage__controls {
+    width: 472px;
+    padding-bottom: 230px;
+  }
+  .event-manage__button {
+    font-size: 20px;
+    padding-top: 11px;
+    padding-bottom: 12px;
+  }
+  .event-manage__create {
+    width: 176px;
+    margin-right: 44px;
+  }
+  .event-manage__join {
+    width: 119px;
+  }
+  .event-manage__code {
+    width: 115px;
   }
 }
 @media (min-width: 2400px) {

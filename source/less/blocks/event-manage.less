@@ -90,15 +90,20 @@
 
   @media (min-width: @tablet-width) {
     background-image: url("../img/event-manage-bg-desktop.jpg");
-    background-position: center -25px;
+    background-position: center;
     background-size: 100%;
 
     &__title {
+      font-size: 53px;
+      width: 760px;
+      padding-top: 240px;
+      padding-bottom: 47px;
+
       &::before {
         height: 6px;
         width: 40px;
         right: 240px;
-        bottom: 15px;
+        bottom: 26px;
         border-left-width: 8px;
         border-right-width: 15px;
       }
@@ -106,16 +111,38 @@
         height: 6px;
         width: 220px;
         right: 10px;
-        bottom: 15px;
+        bottom: 26px;
       }
     }
     &__contents {
       padding-right: 400px;
       background-repeat: no-repeat;
       background-image: url("../img/iphone.png");
-      background-position: 80% 130px;
-      background-size: 300px;
-      /*Шрифты подгонять, в макете все слито в картинку*/
+      background-position: 89% 220px;
+      background-size: 455px;
+    }
+    &__description {
+      font-size: 33px;
+      padding-bottom: 162px;
+    }
+    &__controls {
+      width: 472px;
+      padding-bottom: 230px;
+    }
+    &__button {
+      font-size: 20px;
+      padding-top: 11px;
+      padding-bottom: 12px;
+    }
+    &__create {
+      width: 176px;
+      margin-right: 44px;
+    }
+    &__join {
+      width: 119px;
+    }
+    &__code {
+      width: 115px;
     }
   }
   @media (min-width: @desktop-width) {
