@@ -78,42 +78,44 @@
 
   @media (min-width: @tablet-width) {
     &__item {
-      width: 400px;
+      width: 415px;
     }
     &__number {
       font-size: 112px;
-      padding-bottom: 58px;
+      padding-bottom: 40px;
 
       &::before {
-        width: 70px;
-        height: 70px;
-        left: 42%;
+        width: 95px;
+        height: 95px;
+        left: 40%;
+        top: -85px;
       }
       &--audiences {
         &::before {
           box-shadow:
             0 0 0 3px #FFFFFF,
-            0 0 0 22px #a5d2cc;
+            0 0 0 27px #a5d2cc;
         }
       }
       &--hours {
         &::before {
           box-shadow:
             0 0 0 3px #FFFFFF,
-            0 0 0 22px #f8b0a7;
+            0 0 0 27px #f8b0a7;
         }
       }
       &--events {
         &::before {
           box-shadow:
             0 0 0 3px #FFFFFF,
-            0 0 0 22px #f7d3b2;
+            0 0 0 27px #f7d3b2;
         }
       }
     }
     &__descriptions {
       font-size: 54px;
       padding-bottom: 70px;
+      border-width: 9px;
     }
   }
   @media (min-width: @desktop-width) {

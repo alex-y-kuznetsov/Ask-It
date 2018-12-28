@@ -1772,14 +1772,14 @@ body {
 }
 @media (min-width: 1536px) {
   .about-us__title {
-    padding-top: 125px;
-    padding-bottom: 190px;
+    padding-top: 123px;
+    padding-bottom: 304px;
     font-size: 45px;
   }
   .about-us__title::after {
     width: 120px;
     height: 3px;
-    bottom: 180px;
+    bottom: 296px;
     right: 20px;
     border-left-width: 85px;
     border-right-width: 13px;
@@ -1923,38 +1923,40 @@ body {
 }
 @media (min-width: 1536px) {
   .stats__item {
-    width: 400px;
+    width: 415px;
   }
   .stats__number {
     font-size: 112px;
-    padding-bottom: 58px;
+    padding-bottom: 40px;
   }
   .stats__number::before {
-    width: 70px;
-    height: 70px;
-    left: 42%;
+    width: 95px;
+    height: 95px;
+    left: 40%;
+    top: -85px;
   }
   .stats__number--audiences::before {
     -webkit-box-shadow: 0 0 0 3px #FFFFFF,
-            0 0 0 22px #a5d2cc;
+            0 0 0 27px #a5d2cc;
             box-shadow: 0 0 0 3px #FFFFFF,
-            0 0 0 22px #a5d2cc;
+            0 0 0 27px #a5d2cc;
   }
   .stats__number--hours::before {
     -webkit-box-shadow: 0 0 0 3px #FFFFFF,
-            0 0 0 22px #f8b0a7;
+            0 0 0 27px #f8b0a7;
             box-shadow: 0 0 0 3px #FFFFFF,
-            0 0 0 22px #f8b0a7;
+            0 0 0 27px #f8b0a7;
   }
   .stats__number--events::before {
     -webkit-box-shadow: 0 0 0 3px #FFFFFF,
-            0 0 0 22px #f7d3b2;
+            0 0 0 27px #f7d3b2;
             box-shadow: 0 0 0 3px #FFFFFF,
-            0 0 0 22px #f7d3b2;
+            0 0 0 27px #f7d3b2;
   }
   .stats__descriptions {
     font-size: 54px;
     padding-bottom: 70px;
+    border-width: 9px;
   }
 }
 @media (min-width: 2400px) {
@@ -2025,8 +2027,8 @@ body {
 @media (min-width: 1536px) {
   .who__title {
     font-size: 99px;
-    padding-top: 120px;
-    padding-bottom: 25px;
+    padding-top: 110px;
+    padding-bottom: 27px;
   }
   .who__subtitle {
     font-size: 50px;
@@ -2034,6 +2036,7 @@ body {
   }
   .who__description {
     font-size: 37px;
+    line-height: 44px;
     padding-bottom: 195px;
     width: 1200px;
   }
@@ -2093,9 +2096,13 @@ body {
   }
 }
 @media (min-width: 1536px) {
+  .page-footer {
+    padding-top: 0;
+  }
   .page-footer__logo {
     padding-top: 165px;
-    padding-bottom: 90px;
+    padding-bottom: 39px;
+    width: 222px;
   }
   .page-footer__controls {
     padding-bottom: 80px;
@@ -2147,11 +2154,11 @@ body {
 }
 @media (min-width: 1536px) {
   .we-are__description {
-    width: 1210px;
+    width: 1190px;
     font-size: 64px;
     line-height: 86px;
     margin: 0 auto;
-    padding-bottom: 165px;
+    padding-bottom: 152px;
   }
 }
 @media (min-width: 2400px) {
@@ -2195,6 +2202,7 @@ body {
     text-decoration: none;
     color: #FFFFFF;
     font-size: 47px;
+    line-height: 56px;
     font-weight: 300;
   }
 }
@@ -2242,7 +2250,7 @@ body {
   }
   .social__links {
     width: 880px;
-    padding-bottom: 150px;
+    padding-bottom: 87px;
   }
   .social__link {
     display: block;
@@ -2312,7 +2320,7 @@ body {
     padding-bottom: 120px;
   }
   .subscribe__form {
-    padding-bottom: 375px;
+    padding-bottom: 357px;
     width: 1085px;
   }
   .subscribe__form::after {
