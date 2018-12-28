@@ -525,11 +525,11 @@ body {
   }
   .login__link--login::before {
     background-image: url("../img/sign-in.png");
-    left: 7px;
+    left: 4px;
   }
   .login__link--register::before {
     background-image: url("../img/register.png");
-    left: 14px;
+    left: 12px;
   }
 }
 @media (min-width: 2400px) {
@@ -686,7 +686,7 @@ body {
   .event-manage {
     background-image: url("../img/event-manage-bg-desktop.jpg");
     background-position: center;
-    background-size: 100%;
+    background-size: 101%;
   }
   .event-manage__title {
     font-size: 53px;
@@ -1212,13 +1212,13 @@ body {
   }
   .features__title {
     font-size: 57px;
-    padding-top: 140px;
-    padding-bottom: 85px;
+    padding-top: 135px;
+    padding-bottom: 111px;
     width: 250px;
   }
   .features__title::after {
     left: 20px;
-    bottom: 70px;
+    bottom: 103px;
     width: 80px;
     height: 4px;
     border-left-width: 65px;
@@ -1227,13 +1227,16 @@ body {
   .features__item {
     font-size: 62px;
     padding-bottom: 60px;
-    margin: 0 40px 60px 40px;
+    margin: 0 40px 83px 40px;
     width: 600px;
   }
+  .features__item p {
+    padding-top: 35px;
+  }
   .features__item:nth-child(2n)::before {
-    left: -75px;
-    top: 5px;
-    height: 310px;
+    left: -78px;
+    top: -11px;
+    height: 232px;
   }
 }
 @media (min-width: 2400px) {
@@ -1354,24 +1357,25 @@ body {
   }
   .partners__title {
     font-size: 69px;
-    padding-top: 108px;
-    padding-bottom: 250px;
+    padding-top: 101px;
+    padding-bottom: 256px;
     width: 300px;
   }
   .partners__title::after {
     width: 120px;
     height: 5px;
-    bottom: 235px;
+    bottom: 243px;
     right: 30px;
     border-left-width: 85px;
     border-right-width: 13px;
   }
   .partners__items {
     width: 760px;
+    padding-bottom: 31px;
   }
   .partners__item {
     width: 245px;
-    padding-bottom: 85px;
+    padding-bottom: 105px;
   }
 }
 @media (min-width: 2400px) {
@@ -1421,7 +1425,7 @@ body {
 }
 @media (min-width: 1536px) {
   .events {
-    padding-bottom: 350px;
+    padding-bottom: 380px;
   }
   .events__wrapper {
     width: 100%;
@@ -1445,13 +1449,13 @@ body {
     font-weight: 300;
     font-size: 63px;
     color: #037693;
-    padding-top: 155px;
-    padding-bottom: 160px;
+    padding-top: 146px;
+    padding-bottom: 210px;
   }
   .events__title::after {
     width: 120px;
     height: 3px;
-    bottom: 156px;
+    bottom: 200px;
     right: 70px;
     border-left: 85px solid #037693;
     border-right: 13px solid #037693;
@@ -1687,7 +1691,8 @@ body {
     padding: 120px 0 5px 0;
   }
   .event__description {
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 25px;
     color: #000000;
     padding: 0;
     padding-bottom: 20px;
