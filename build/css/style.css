@@ -409,6 +409,7 @@ body {
   .logo--header {
     display: initial;
     margin: 0;
+    padding-left: 313px;
   }
 }
 .section-title {
@@ -471,13 +472,13 @@ body {
 }
 @media (min-width: 2400px) {
   .menu {
-    width: 1120px;
-    padding-left: 100px;
+    width: 1473px;
+    padding-left: 263px;
   }
   .menu__link {
     font-size: 39px;
-    padding-top: 80px;
-    padding-bottom: 85px;
+    padding-top: 86px;
+    padding-bottom: 97px;
   }
 }
 .login__link {
@@ -534,8 +535,7 @@ body {
 }
 @media (min-width: 2400px) {
   .login {
-    width: 290px;
-    /*Временно до графики*/
+    width: 208px;
   }
   .login__link {
     font-size: 19px;
@@ -546,8 +546,13 @@ body {
     width: 35px;
     height: 40px;
     top: 60px;
-    left: 53px;
     background-size: 100%;
+  }
+  .login__link--login::before {
+    left: 4px;
+  }
+  .login__link--register::before {
+    left: 19px;
   }
 }
 .menu-toggler {
@@ -740,16 +745,20 @@ body {
   }
 }
 @media (min-width: 2400px) {
+  .event-manage {
+    background-size: 112%;
+  }
   .event-manage__contents {
     padding-right: 860px;
-    background-position: 80% 330px;
-    background-size: 700px;
+    background-position: 102% 371px;
+    background-size: 790px;
   }
   .event-manage__title {
-    font-size: 83px;
-    padding-top: 370px;
-    padding-bottom: 57px;
-    width: 1200px;
+    font-size: 88px;
+    padding-top: 428px;
+    padding-bottom: 100px;
+    padding-left: 282px;
+    width: 1595px;
   }
   .event-manage__title::before {
     height: 10px;
@@ -757,29 +766,39 @@ body {
     right: 360px;
     border-left-width: 15px;
     border-right-width: 25px;
+    bottom: 47px;
   }
   .event-manage__title::after {
     height: 10px;
     width: 340px;
+    bottom: 47px;
   }
   .event-manage__description {
-    font-size: 50px;
-    padding-bottom: 250px;
+    font-size: 54px;
+    padding-bottom: 277px;
+    padding-left: 285px;
   }
   .event-manage__controls {
     font-size: 33px;
-    padding-bottom: 360px;
-    width: 700px;
+    padding-bottom: 397px;
+    width: 780px;
+    margin-left: 570px;
+  }
+  .event-manage__button {
+    font-size: 34px;
+    padding-top: 20px;
+    padding-bottom: 21px;
   }
   .event-manage__create {
-    width: 270px;
+    width: 297px;
+    margin-right: 76px;
   }
   .event-manage__join {
-    width: 180px;
+    width: 200px;
   }
   .event-manage__code {
-    font-size: 28px;
-    width: 180px;
+    font-size: 34px;
+    width: 200px;
     left: -5px;
   }
 }
